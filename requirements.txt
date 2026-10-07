@@ -1,0 +1,8 @@
+pandas>=2.2
+numpy>=2.0
+scipy>=1.11
+statsmodels>=0.14
+patsy>=0.5
+lifelines>=0.29
+matplotlib>=3.8
+pytest>=8
