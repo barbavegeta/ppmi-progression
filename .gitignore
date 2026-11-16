@@ -1,0 +1,16 @@
+# Python
+__pycache__/
+*.py[cod]
+*.egg-info/
+.pytest_cache/
+.venv/
+.ipynb_checkpoints/
+
+# PPMI data and real-data outputs must never be committed (PPMI Data Use Agreement)
+data/
+output/
+output_synthetic/
+
+# OS / editor
+.DS_Store
+*Zone.Identifier

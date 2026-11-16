@@ -1,0 +1,12 @@
+name: tests
+on: [push, pull_request]
+jobs:
+  pytest:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with: { python-version: "3.14", cache: pip }
+      - run: pip install -r requirements.txt
+      # Unit tests plus a full pipeline run on synthetic data (no PPMI data involved)
+      - run: python -m pytest -q
